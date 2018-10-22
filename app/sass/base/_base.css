@@ -1,0 +1,60 @@
+/*Color-Variables*/
+$black : #333;
+$white : #fff;
+$light-grey : #aaa;
+$dark-grey : #262626;
+/*body{
+	background-color: #000;
+}
+*/
+@define-mixin center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@define-mixin hide{
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+@define-mixin show{
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/*Fonts used
+
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+
+ */
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{box-sizing: border-box;}
+
+html{
+	font-size: 50%;
+	
+	@media (min-width: 480px){
+		font-size: 62.5%;
+	}
+}

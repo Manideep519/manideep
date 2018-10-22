@@ -1,0 +1,16 @@
+.header{
+	/*background-image: url(../img/home-bg.jpg);*/	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	padding: 0 2rem;
+	position: relative;
+
+	&__intro-text{
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+	}
+}
